@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My AI Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Header Section -->
+  <header class="text-center py-8 bg-gray-800 shadow-md">
+    <h1 class="text-4xl font-bold">K L Thejasvi</h1>
+    <p class="text-gray-400">AI & ML Enthusiast | Web Developer</p>
+  </header>
+
+  <!-- About Me Section -->
+  <section class="p-6 max-w-4xl mx-auto" id="about">
+    <h2 class="text-2xl font-bold mb-2">About Me</h2>
+    <p>
+      I'm a B.Tech CSM student specializing in AI & ML. I build intelligent systems and web apps.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="p-6 max-w-4xl mx-auto" id="projects">
+    <h2 class="text-2xl font-bold mb-2">Projects</h2>
+    <ul class="space-y-4">
+      <li class="bg-gray-800 p-4 rounded-lg shadow">
+        <h3 class="text-xl font-semibold">Malware Detection System</h3>
+        <p>Machine learning model that detects malicious files.</p>
+      </li>
+      <li class="bg-gray-800 p-4 rounded-lg shadow">
+        <h3 class="text-xl font-semibold">Organic Farming Analyzer</h3>
+        <p>Data-driven analysis for sustainable agriculture.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="p-6 max-w-4xl mx-auto" id="contact">
+    <h2 class="text-2xl font-bold mb-2">Contact</h2>
+    <form class="space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-2 rounded bg-gray-700 text-white" />
+      <input type="email" placeholder="Your Email" class="w-full p-2 rounded bg-gray-700 text-white" />
+      <textarea placeholder="Your Message" class="w-full p-2 rounded bg-gray-700 text-white"></textarea>
+      <button type="submit" class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600">Send</button>
+    </form>
+  </section>
+
+  <!-- Chatbot Section -->
+  <section class="p-6 max-w-4xl mx-auto" id="chatbot">
+    <h2 class="text-2xl font-bold mb-2">Ask Me Anything (AI Chatbot)</h2>
+    <div class="bg-gray-800 p-4 rounded shadow">
+      <div id="chatbox" class="space-y-2 mb-4 text-sm max-h-64 overflow-y-auto"></div>
+      <input id="userInput" type="text" placeholder="Ask a question..." class="w-full p-2 rounded bg-gray-700 text-white"/>
+      <button onclick="sendMessage()" class="mt-2 bg-green-500 px-4 py-2 rounded hover:bg-green-600">Send</button>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="chatbot.js"></script>
+
+</body>
+</html>
